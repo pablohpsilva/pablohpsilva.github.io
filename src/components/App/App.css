@@ -1,0 +1,35 @@
+/* $font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$white: #FFF; */
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #FFF;
+}
+
+.app-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "header"
+    "main"
+    "aside"
+    "footer"
+}
+
+.app-header {
+  grid-area: header;
+}
+
+.app-main {
+  grid-area: main;
+}
+
+.app-aside {
+  grid-area: aside;
+}
+
+.app-footer {
+  grid-area: footer;
+}
