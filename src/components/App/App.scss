@@ -1,20 +1,21 @@
-@import './variables';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/functions';
 
 body {
   font: 100% $font-stack;
-  background-color: $primary-color;
-  color: $white;
+  background-color: pablo-color-level('background', 2);
+  color: pablo-color-level('primary');
 }
 
 .app-wrapper {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-    "header"
-    "main"
-    "aside"
-    "footer"
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "sidebar sidebar"
+    "footer footer";
 }
 
 .app-header {
@@ -23,10 +24,11 @@ body {
 
 .app-main {
   grid-area: main;
+  margin-top: 48px;
 }
 
 .app-aside {
-  grid-area: aside;
+  grid-area: sidebar;
 }
 
 .app-footer {

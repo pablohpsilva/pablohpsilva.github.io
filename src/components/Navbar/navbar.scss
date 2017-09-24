@@ -1,0 +1,37 @@
+@import '../../assets/scss/functions';
+
+.navbar-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "logo menu";
+  padding: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: flex-end;
+  color: pablo-color-level('primary');
+  a {
+    color: pablo-color-level('primary');
+    text-decoration: none;
+    margin: 0 4px;
+  }
+}
+
+.logo,
+.menu {
+  display: flex;
+  padding: 2px 4px;
+  align-items: center;
+}

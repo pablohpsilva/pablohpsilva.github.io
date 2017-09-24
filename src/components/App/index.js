@@ -1,31 +1,28 @@
-import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-import './App.scss';
+import React, { Component } from 'react'
+import './app.scss'
+
+import Logo from '../Logo'
+import Navbar from '../Navbar'
+import NavbarItem from '../NavbarItem'
 
 class App extends Component {
   render() {
     return (
       <div className="app-wrapper">
-        <header className="app-header">
-          header
-          <nav>nav</nav>
-        </header>
+        <Navbar>
+          <Logo className="logo"/>
+          <div className="menu">
+            <NavbarItem>Item 1</NavbarItem>
+            <NavbarItem>Item 2</NavbarItem>
+            <NavbarItem>Item 3</NavbarItem>
+          </div>
+        </Navbar>
         <main className="app-main">main</main>
         <aside className="app-aside">aside</aside>
         <footer className="app-footer">footer</footer>
       </div>
-      // <div className="App">
-      //   <div className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <h2>Welcome to React</h2>
-      //   </div>
-      //   <p className="App-intro">
-      //     To get started, edit <code>src/App.js</code> and save to reload.
-      //   </p>
-      // </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

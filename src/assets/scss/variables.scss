@@ -1,0 +1,19 @@
+// Global variables
+$color-interval: 10% !global;
+
+// Fonts
+$font-stack: Helvetica, sans-serif;
+
+// Color palette
+$pablo-default-colors: (
+  'primary': #FFFFFF,
+  'accent': #494949,
+  'secondary': #BFBFBF,
+  'background': #000000
+);
+
+// Opacity array
+$pablo-opacity: (
+  'light': 0.8, // opacity used with lighter colors
+  'dark': 0.4   // opacity used with darker colors
+);
