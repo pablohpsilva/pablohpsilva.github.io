@@ -1,10 +1,9 @@
-/* $font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-$white: #FFF; */
+@import './variables';
 
 body {
-  font: 100% Helvetica, sans-serif;
-  color: #FFF;
+  font: 100% $font-stack;
+  background-color: $primary-color;
+  color: $white;
 }
 
 .app-wrapper {
